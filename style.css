@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+}
+
+.txt{
+    color: white;
+    background-color: black;
+    font-size: 100px;
+    font-family: Arial;
+}
+
+.txt::before{
+    content: "BLADE";
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(3px);
+
+}
+.neon{
+    display: inline-flex;
+    filter: brightness(200%);
+}
