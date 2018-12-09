@@ -1,0 +1,15 @@
+@import "blade";
+@import "heartbeat";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
