@@ -1,0 +1,81 @@
+.txt--neon {
+  color: white;
+  background-color: black;
+  font-size: 100px;
+  line-height: 100px;
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+.txt--neon::before {
+  content: "NEON";
+  position: absolute;
+  mix-blend-mode: difference;
+  filter: blur(1px);
+  text-shadow: 1px 1px  #A0EE05;
+  animation: glow 3s running ease-in-out infinite;
+
+}
+
+.color--neon {
+  background: #A0EE05;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+
+.dodge--neon {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: color-dodge;
+}
+
+
+@keyframes glow {
+  20%{
+    filter: blur(4px);
+    text-shadow: 1px 1px  #A0EE05;
+
+  }
+  40%{
+    filter: blur(1px);
+    text-shadow: 1px 1px  #A0EE05;
+  }
+  41%{
+    filter: blur(4px);
+    text-shadow: 3px 3px  #A0EE05;
+
+  }
+  84% {
+    filter: blur(1px);
+    text-shadow: 1px 1px  #A0EE05;
+   }
+  85% {
+    filter: blur(4px);
+    text-shadow: 5px 5px  #A0EE05;
+  }
+  86% {
+    filter: blur(1px);
+    text-shadow: 1px 1px  #A0EE05;
+  }
+  87% {
+    filter: blur(1px);
+    text-shadow: 1px 1px  #A0EE05;
+
+  }
+  90% {
+    filter: blur(4px);
+    text-shadow: 5px 5px  #A0EE05;
+  }
+  91% {
+    filter: blur(1px);
+    text-shadow: 1px 1px  #A0EE05;
+  }
+
+}
