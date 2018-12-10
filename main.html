@@ -10,11 +10,22 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
 <body>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#blade">blade</a>
+    <a href="#heartbeat">heartbeat</a>
+    <a href="#neon">neon</a>
+</div>
+
+<div class="menu-btn" onclick="openNav()">&apid;
+    </div>
 
 <div class="effect effect--blade">
-    <div class="wrapper">
+    <div class="wrapper" id="blade">
         <div class="blur">
             <span class="txt--blade">BLADE</span>
             <span class="gradient--blade"></span>
@@ -24,7 +35,7 @@
     </div>
 </div>
 <div class="effect effect--heart">
-    <div class="wrapper">
+    <div class="wrapper" id="heartbeat">
         <div class="blur">
             <span class="txt--heart">HEARTBEAT</span>
             <span class="color--heart"></span>
@@ -34,7 +45,7 @@
     </div>
 </div>
 <div class="effect effect--neon">
-    <div class="wrapper">
+    <div class="wrapper" id="neon">
         <div class="blur">
             <span class="txt--neon">NEON</span>
             <span class="color--neon"></span>

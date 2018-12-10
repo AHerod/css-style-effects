@@ -1,6 +1,7 @@
 @import "blade";
 @import "heartbeat";
 @import "neon";
+@import "nav";
 
 * {
   margin: 0;
@@ -8,9 +9,12 @@
 }
 
 .wrapper {
-  height: 200px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: black;
+}
+
+body{  overflow: hidden;
 }
