@@ -14,12 +14,15 @@
     animation: lines 2s ease-out infinite;
     mix-blend-mode: color-burn;
     pointer-events: none;
+
   }
   .text, .text >* {
     position: absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+    animation:  shake .2s ease-in infinite;
+
   }
   .text {
     >* {
@@ -60,4 +63,16 @@
   100% {
     background-position:0 25px;
   }
+}
+
+@keyframes shake {
+
+  0% { transform:
+          skewX(-15deg);
+  }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }
 }
