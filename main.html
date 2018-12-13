@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <title>CSS effects</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Plaster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amarante" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <script src="main.js"></script>
 </head>
 <body>
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#glitch">glitch</a>
     <a href="#blade">blade</a>
     <a href="#heartbeat">heartbeat</a>
     <a href="#neon">neon</a>
@@ -23,6 +26,17 @@
 
 <div class="menu-btn" onclick="openNav()">&apid;
     </div>
+<div class="effect effect-glitch">
+    <div class="wrapper" id="glitch">
+        <div class="lines">
+            <div class="text">
+                <div class="r">GLITCH</div>
+                <div class="g">GLITCH</div>
+                <div class="b">GLITCH</div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="effect effect--blade">
     <div class="wrapper" id="blade">
@@ -44,7 +58,7 @@
 
     </div>
 </div>
-<div class="effect effect--neon">
+<div class="effect effect--neon" >
     <div class="wrapper" id="neon">
         <div class="blur">
             <span class="txt--neon">NEON</span>
@@ -54,5 +68,18 @@
 
     </div>
 </div>
+
+<div class="effect effect--gradient">
+    <div class="wrapper" id="gradient">
+        <div class="blur">
+            <span class="txt--gradient">summer</span>
+            <span class="color--gradient"></span>
+            <span class="dodge--gradient"></span>
+        </div>
+
+    </div>
+</div>
+
+
 </body>
 </html>
