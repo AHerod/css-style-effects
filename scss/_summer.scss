@@ -1,16 +1,47 @@
 .txt--gradient {
   font-size: 100px;
   line-height: 100px;
-  filter: blur(1px);
   font-family: 'Permanent Marker', cursive;
-  background: #22c1c3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: sun 3s ease-in infinite;
+  animation-delay: 1s;
+  color: white;
+
 }
 
+.triggerAnimate {
+  animation: sun 1s ease-in infinite,turnOn 5s ease-in-out infinite;
 
-
+}
 
 @keyframes sun {
+  10% {
+    color: #FEFCC3;
+    text-shadow: 6px 6px 0 rgba(255, 255, 102, 0.2);
+  }
+  70% {
+    color: #FEF64D;
+    text-shadow: 0 4px 3px rgba(255, 255, 102, 0.4),
+    0 8px 13px rgba(0, 0, 0, 0.1),
+    0 18px 23px rgba(0, 0, 0, 0.1);
+  }
+ 90%{
+    color: black;
+  }
+}
 
+@keyframes turnOn {
+
+  10% {
+    transform: translateY(30px);
+
+  }
+  70%{
+    transform: translateY(0px);
+    color: #FEF64D;
+    text-shadow: 0 4px 3px rgba(255, 255, 102, 0.4),
+    0 8px 13px rgba(0, 0, 0, 0.1),
+    0 18px 23px rgba(0, 0, 0, 0.1);
+  }
+  90%{
+  }
 }
