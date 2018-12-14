@@ -1,0 +1,72 @@
+.letter {
+  font-family: 'Inconsolata', monospace;
+  font-size: 100px;
+}
+.gt{
+  color: #00FF00;
+}
+.underscore {
+  animation: blinking .6s ease-in infinite;
+  color: #00FF00;
+}
+
+.letter1 {
+  animation: showGreen 1.1s infinite;
+  animation-delay: .3s;
+}
+
+.letter2 {
+  animation: showGreen 1s infinite;
+  animation-delay: .4s;
+}
+
+.letter3 {
+  animation: showGreen .9s infinite;
+  animation-delay: .5s;
+}
+
+.letter4 {
+  animation: showGreen .8s infinite;
+  animation-delay: .6s;
+
+}
+
+.letter5 {
+  animation: showGreen .7s infinite;
+  animation-delay: .7s;
+}
+
+.letter5 {
+  animation: showGreen .6s infinite;
+  animation-delay: .8s;
+}
+
+.letter6 {
+  animation: showGreen .5s infinite;
+  animation-delay: .9s;
+
+}
+
+.letter7 {
+  animation: showGreen .4s infinite;
+  animation-delay: 1s;
+
+}
+
+.letter8 {
+  animation: showGreen .3s infinite;
+  animation-delay: 1.1s;
+}
+
+@keyframes blinking {
+  100% {
+    color: black;
+  }
+}
+
+@keyframes showGreen {
+  1%,100% {
+    color: #00FF00;
+  }
+
+}
