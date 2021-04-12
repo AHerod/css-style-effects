@@ -1,4 +1,4 @@
-# css-style-effects
-some css styling ideas with animations
+# CSS TEXT STYLING EFFECTS
+see [live](https://css-text-styling-effects.netlify.app/) :eyes:
 
-##  fully css-based
+css-based text styling ideas with animations
