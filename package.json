@@ -4,7 +4,7 @@
   "description": "<img alt=\"Logo\" src=\"http://coderslab.pl/svg/logo-coderslab.svg\" width=\"400\">",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4"
   },
